@@ -12,10 +12,12 @@ def longest_common_prefix(strs: list) -> str:
     """
     if len(strs) == 0 :
         return None
+    lenghts = []
     for element in strs :
         if element == '' :
             raise IndexError("Please remove the empty string from the list")
-    n = min([len(x) for x in strs])
+        lenghts.append(len(element))
+    n = min(lenghts)
     index = 0
     prefix = ""
     for index in range(n) :
