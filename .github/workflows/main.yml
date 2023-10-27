@@ -176,5 +176,5 @@ jobs:
       #----------------------------------------------
       - name: Run Pylint
         run: |
-         poetry run pylint ./moving_to_poetry/ ./tests
+         poetry run pylint ./function ./tests
   
