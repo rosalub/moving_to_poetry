@@ -2,7 +2,7 @@
 function"""
 
 import pytest
-from moving_to_poetry.common_prefix import longest_common_prefix
+from function.common_prefix import longest_common_prefix
 
 strs = ["flower","flow","flight"]
 strs_bis = ["flower","flow","flight", '']
