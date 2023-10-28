@@ -96,7 +96,10 @@ jobs:
       # install your root project, if required
       #----------------------------------------------
       - name: Install project
-        run: poetry install --no-interaction
+        run: |
+          poetry lock [--no-update]
+          poetry install --no-interaction
+          
       #----------------------------------------------
       #              run test suite
       #----------------------------------------------
