@@ -208,7 +208,7 @@ jobs:
     
       - name: Deploy documentation
         if: ${{ github.event_name == 'push' }}
-        uses: rosalub/github-pages-deploy-action@4.1.4
+        uses: rosalub.github.io/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
           folder: gh-pages  
