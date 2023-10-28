@@ -97,7 +97,7 @@ jobs:
       #----------------------------------------------
       - name: Install project
         run: |
-          poetry lock [--no-update]
+          poetry lock --no-update
           poetry install --no-interaction
           
       #----------------------------------------------
